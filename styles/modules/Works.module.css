@@ -16,7 +16,7 @@
   width: 90vw;
   height: 85vh;
   background-color: white;
-  border-radius: 3%;
+  border-radius: 10px;
 }
 
 .subTitle {
@@ -49,9 +49,10 @@
 
 @media screen and (max-width:787px) {
   .worksActive {
-    width: 98vw;
-    height: 82vh;
-    border-radius: 2%;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    padding-bottom: 9em;
   }
   
   .content {
