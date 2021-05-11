@@ -36,7 +36,7 @@ const EnbeddedModal: React.FC<Props> = (props) => {
     <div style={color} className={styles.skillsetModal + ' ' + (skillsetMenu == SKILLSET_OTHER ? styles.skillsetModalActive : '')}>
       <CloseSkillsetModalButton/>
       <h2 className={styles.subTitle}>
-      { contents.profile.webFrontendSkills }
+      { contents.profile.other }
       </h2>
       <div className={styles.content + ' ' + (skillsetMenu == SKILLSET_OTHER ? styles.contentActive : '')}>
         <h3 className={styles.section}>
