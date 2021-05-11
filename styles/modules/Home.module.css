@@ -1,0 +1,97 @@
+.home {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 50%;
+  transition: all 1000ms 0s ease;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  z-index: 2;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  font-family: 'Varela Round', serif;
+}
+
+.socialMenu {
+  z-index: 3;
+  margin: 2em 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0 .5em;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: #111133;
+  color: #eeeeee;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  transition: all 300ms 0s ease;
+  cursor: pointer;
+}
+
+.socialItem:hover {
+  filter: brightness(150%);
+  transform: translateX(-1px) translateY(-3px) rotateZ(-5deg);
+}
+
+.languageButton {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 1em;
+  right: 1em;
+  padding: .5em .3em;
+  background-color: #ddd;
+  border-radius: 20px;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.languageButtonItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  margin: 0 .4em;
+  background-color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-family: 'Varela Round', serif;
+  transition: all 500ms 0s ease;
+  cursor: pointer;
+}
+
+.languageButtonItemActive {
+  background-color: navy;
+  color: white;
+}

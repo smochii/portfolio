@@ -1,0 +1,11 @@
+export const TWITTER_URL = 'https://twitter.com/omochinc';
+export const GITHUB_URL = 'https://github.com/smochii';
+export const MENU_HOME = 0;
+export const MENU_PROFILE = 1;
+export const MENU_WORKS = 2;
+export const SKILLSET_BACKEND = 0;
+export const SKILLSET_FRONTEND = 1;
+export const SKILLSET_ENBEDDED = 2;
+export const SKILLSET_OTHER = 3;
+export const LANGUAGE_EN = 0;
+export const LANGUAGE_JA = 1;

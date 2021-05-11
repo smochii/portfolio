@@ -1,0 +1,28 @@
+@keyframes borderDeformation {
+  0% { border-radius: 50%; }
+  48% { border-radius: 50%; }
+  52% { border-radius: 10%; }
+  100% { border-radius: 10%; }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0px); color: white; }
+  95% { transform: translateY(0px); color: white; }
+  100% { transform: translateY(-10px); color: gold; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes float {
+  0% {transform:translate(0, 0) }
+  50% {transform:translate(0, -10px) }
+  100% {transform:translate(0, 0) }
+}
+
+@keyframes slide {
+  from { width: 0% }
+  to { width: 100% }
+}

@@ -1,0 +1,14 @@
+.bounce {
+  display: inline-block;
+}
+
+.fadeIn {
+  position: relative;
+  opacity: 0;
+}
+
+.slide {
+  position: absolute;
+  width: 0;
+  height: 100%;
+}
