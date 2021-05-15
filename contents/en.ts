@@ -11,7 +11,7 @@ const contents: Contents = {
     mySkillset: 'My skillset',
     webBackendSkills: 'Web Backend Skills',
     webFrontendSkills: 'Web Frontend Skills',
-    enbeddedSkills: 'Enbedded Skills',
+    embeddedSkills: 'Embedded Skills',
     other: 'Other',
     haveUsedKeyword: 'Have used keyword',
     selfStudyKeyword: 'Self study keyword',
@@ -69,7 +69,7 @@ const contents: Contents = {
         }
       },
       {
-        name: 'Enbedded',
+        name: 'Embedded',
         color: 'dodgerblue',
         child: {
           haveUsed: [

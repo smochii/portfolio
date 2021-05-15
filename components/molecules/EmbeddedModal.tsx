@@ -4,7 +4,7 @@ import styles from '../../styles/modules/SkillsetModal.module.css'
 import CloseSkillsetModalButton from '../atoms/CloseSkillsetModalButton';
 import React from 'react';
 import ChildSkillChip from '../atoms/ChildSkillChip';
-import { SKILLSET_ENBEDDED } from '../../constant/constant';
+import { SKILLSET_EMBEDDED } from '../../constant/constant';
 import Util from '../../util/Util';
 
 type Props = {
@@ -20,25 +20,25 @@ const EnbeddedModal: React.FC<Props> = (props) => {
 
   const skillsetMenu = useRecoilValue(SkillsetMenuState);
 
-  const haveUsed: JSX.Element[] = contents.profile.skillset[SKILLSET_ENBEDDED].child.haveUsed.map((text, i) => {
+  const haveUsed: JSX.Element[] = contents.profile.skillset[SKILLSET_EMBEDDED].child.haveUsed.map((text, i) => {
     return (
-      <ChildSkillChip key={i} text={text} color={contents.profile.skillset[SKILLSET_ENBEDDED].color}/>
+      <ChildSkillChip key={i} text={text} color={contents.profile.skillset[SKILLSET_EMBEDDED].color}/>
     )
   })
 
-  const selfStudy: JSX.Element[] = contents.profile.skillset[SKILLSET_ENBEDDED].child.selfStudy.map((text, i) => {
+  const selfStudy: JSX.Element[] = contents.profile.skillset[SKILLSET_EMBEDDED].child.selfStudy.map((text, i) => {
     return (
-      <ChildSkillChip key={i} text={text} color={contents.profile.skillset[SKILLSET_ENBEDDED].color}/>
+      <ChildSkillChip key={i} text={text} color={contents.profile.skillset[SKILLSET_EMBEDDED].color}/>
     )
   })
 
   return (
-    <div style={color} className={styles.skillsetModal + ' ' + (skillsetMenu == SKILLSET_ENBEDDED ? styles.skillsetModalActive : '')}>
+    <div style={color} className={styles.skillsetModal + ' ' + (skillsetMenu == SKILLSET_EMBEDDED ? styles.skillsetModalActive : '')}>
       <CloseSkillsetModalButton/>
       <h2 className={styles.subTitle}>
-      { contents.profile.enbeddedSkills }
+      { contents.profile.embeddedSkills }
       </h2>
-      <div className={styles.content + ' ' + (skillsetMenu == SKILLSET_ENBEDDED ? styles.contentActive : '')}>
+      <div className={styles.content + ' ' + (skillsetMenu == SKILLSET_EMBEDDED ? styles.contentActive : '')}>
         <h3 className={styles.section}>
           { contents.profile.haveUsedKeyword }
         </h3>

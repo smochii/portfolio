@@ -69,6 +69,7 @@
   font-size: .9em;
   font-weight: 300;
   transition: all .2s 0s ease;
+  user-select: none;
 }
 
 .chip:hover {

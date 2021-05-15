@@ -9,7 +9,7 @@ type Contents = {
     mySkillset: string;
     webBackendSkills: string;
     webFrontendSkills: string;
-    enbeddedSkills: string;
+    embeddedSkills: string;
     other: string;
     haveUsedKeyword: string;
     selfStudyKeyword: string;

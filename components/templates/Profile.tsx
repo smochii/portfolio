@@ -1,12 +1,12 @@
 import React from 'react'
-import { SKILLSET_BACKEND, SKILLSET_ENBEDDED, SKILLSET_FRONTEND, SKILLSET_OTHER, MENU_PROFILE } from '../../constant/constant';
+import { SKILLSET_BACKEND, SKILLSET_EMBEDDED, SKILLSET_FRONTEND, SKILLSET_OTHER, MENU_PROFILE } from '../../constant/constant';
 import styles from '../../styles/modules/Profile.module.css'
 import { useRecoilValue } from 'recoil'
 import MenuState from '../../states/atoms/MenuState'
 import BackendModal from '../molecules/BackendModal'
 import SkillsetMenu from '../organisms/SkillsetMenu'
 import FrontendModal from '../molecules/FrontendModal'
-import EnbeddedModal from '../molecules/EnbeddedModal'
+import EnbeddedModal from '../molecules/EmbeddedModal'
 import OtherModal from '../molecules/OtherModal'
 import Util from '../../util/Util';
 
@@ -33,7 +33,7 @@ const Profile: React.FC = () => {
       </div>
       <BackendModal color={contents.profile.skillset[SKILLSET_BACKEND].color}/>
       <FrontendModal color={contents.profile.skillset[SKILLSET_FRONTEND].color}/>
-      <EnbeddedModal color={contents.profile.skillset[SKILLSET_ENBEDDED].color}/>
+      <EnbeddedModal color={contents.profile.skillset[SKILLSET_EMBEDDED].color}/>
       <OtherModal color={contents.profile.skillset[SKILLSET_OTHER].color}/>
     </React.Fragment>
   )

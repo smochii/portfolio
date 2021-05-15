@@ -11,7 +11,7 @@ const contents: Contents = {
     mySkillset: 'できること',
     webBackendSkills: 'バックエンド',
     webFrontendSkills: 'フロントエンド',
-    enbeddedSkills: '組み込み開発',
+    embeddedSkills: '組み込み',
     other: 'その他',
     haveUsedKeyword: '使ったことあるもの',
     selfStudyKeyword: '独学したもの',

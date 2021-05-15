@@ -15,7 +15,7 @@
 .skillsetModalActive {
   width: 90vw;
   height: 95vh;
-  border-radius: 1%;
+  border-radius: 10px;
   transform: rotateZ(0deg);
 }
 
@@ -69,6 +69,7 @@
   font-size: .7em;
   font-weight: bold;
   transition: all .2s 0s ease;
+  user-select: none;
 }
 
 .closeSkillsetModalButton {

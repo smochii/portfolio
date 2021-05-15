@@ -3,7 +3,7 @@ import styles from '../../styles/modules/Profile.module.css'
 import { useSetRecoilState } from 'recoil';
 import SkillChip from '../atoms/SkillChip'
 import SkillsetMenuState from '../../states/atoms/SkillsetMenuState'
-import { SKILLSET_BACKEND, SKILLSET_FRONTEND, SKILLSET_ENBEDDED, SKILLSET_OTHER } from '../../constant/constant';
+import { SKILLSET_BACKEND, SKILLSET_FRONTEND, SKILLSET_EMBEDDED, SKILLSET_OTHER } from '../../constant/constant';
 import Util from '../../util/Util';
 
 const SkillsetMenu: React.FC = () => {
@@ -20,7 +20,7 @@ const SkillsetMenu: React.FC = () => {
   };
 
   const clickEnbedded: React.MouseEventHandler<HTMLDivElement> = (event) => {
-    setSkillsetMenu(SKILLSET_ENBEDDED);
+    setSkillsetMenu(SKILLSET_EMBEDDED);
   };
 
   const clickOther: React.MouseEventHandler<HTMLDivElement> = (event) => {
